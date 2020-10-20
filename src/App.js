@@ -11,6 +11,7 @@ function App() {
       .then(
         (result) => {
           console.log(result);
+          document.querySelector("#return").innerHTML = result;
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
