@@ -1,6 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState, useEffect } from "react";
 import "./App.css";
+import { API, Auth, Storage } from "aws-amplify";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
 function App() {
   function callRest() {
@@ -17,7 +18,7 @@ function App() {
         // instead of a catch() block so that we don't swallow
         // exceptions from actual bugs in components.
         (error) => {
-          console.log("getLocation error", error);
+          console.log("error", error);
         }
       );
   }
@@ -28,9 +29,10 @@ function App() {
         <p>Click this button to call rest</p>
         <button onClick={callRest}>Click Me</button>
         <textarea id="return"></textarea>
+        <hr></hr>
       </header>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

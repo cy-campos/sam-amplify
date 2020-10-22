@@ -10,6 +10,11 @@
       "StackName": "amplify-samamplify-dev-131505",
       "StackId": "arn:aws:cloudformation:us-east-1:684236050683:stack/amplify-samamplify-dev-131505/cd39a020-12f7-11eb-ae01-0ad52a854211",
       "AmplifyAppId": "d10csvl0exc7d9"
+    },
+    "categories": {
+      "auth": {
+        "samamplifyac908d66": {}
+      }
     }
   }
 }
