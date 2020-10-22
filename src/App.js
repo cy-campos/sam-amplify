@@ -29,8 +29,8 @@ function App() {
         <p>Click this button to call rest</p>
         <button onClick={callRest}>Click Me</button>
         <textarea id="return"></textarea>
-        <hr></hr>
       </header>
+      <AmplifySignOut></AmplifySignOut>
     </div>
   );
 }
